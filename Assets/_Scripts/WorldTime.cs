@@ -7,6 +7,8 @@ namespace WorldTime
     public class WorldTime : MonoBehaviour
     {
         [SerializeField]
-        private float _timeScale = 1.0f;
+        private float _timeScale;
+        
+        
     }
 }
