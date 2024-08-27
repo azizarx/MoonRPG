@@ -4,10 +4,12 @@ public class InteractingSystem : MonoBehaviour
 {
     [SerializeField]
     private LayerMask _layerMask;
+    [SerializeField]
+    private Transform _interactionCircle;
     private void Update()
     {
         //Casting a circle to detect objects
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, 0.6f, ~_layerMask);
+        Collider2D hit = Physics2D.OverlapCircle(_interactionCircle.position, 0.3f, ~_layerMask);
         if (hit != null)
         {
             hit.TryGetComponent(out WorldObject worldObject);
@@ -19,7 +21,7 @@ public class InteractingSystem : MonoBehaviour
     private void OnDrawGizmos()
     {
         UnityEditor.Handles.color = Color.blue;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, 0.6f);
+        UnityEditor.Handles.DrawWireDisc(_interactionCircle.position, Vector3.back, 0.3f);
 
     }
 }

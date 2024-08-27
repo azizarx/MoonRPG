@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7849386723548173869}
   - component: {fileID: 1064311131427807684}
+  - component: {fileID: 5858503765385415544}
   m_Layer: 0
   m_Name: Global Light 2D
   m_TagString: Untagged
@@ -82,3 +83,46 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &5858503765385415544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714645150253775595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72862367a53e2b74d99593e423939375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldTime: {fileID: 0}
+  _gradient:
+    serializedVersion: 2
+    key0: {r: 0, g: 0.0015383507, b: 0.2905661, a: 1}
+    key1: {r: 1, g: 0.69064647, b: 0.3150943, a: 1}
+    key2: {r: 0.98490566, g: 0.98490566, b: 0.98490566, a: 0}
+    key3: {r: 1, g: 1, b: 1, a: 0}
+    key4: {r: 1, g: 1, b: 1, a: 0}
+    key5: {r: 0.9547169, g: 0.9547169, b: 0.9547169, a: 0}
+    key6: {r: 0.7056604, g: 0.26807404, b: 0.1531149, a: 0}
+    key7: {r: 0, g: 0, b: 0.2901961, a: 0}
+    ctime0: 13647
+    ctime1: 20740
+    ctime2: 23361
+    ctime3: 32768
+    ctime4: 39244
+    ctime5: 48033
+    ctime6: 50501
+    ctime7: 58365
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
