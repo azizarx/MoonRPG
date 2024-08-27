@@ -4209,9 +4209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2783d6a7643e6a43af5c12300b9e877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerMask:
+  _layerMask:
     serializedVersion: 2
-    m_Bits: 12
+    m_Bits: 0
 --- !u!1 &2024425602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,8 +4527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d4cdf0e454a1247a3c8de6d822274f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteracting: 0
-  items: []
+  _items: []
 --- !u!1 &2136121216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,6 +4690,18 @@ PrefabInstance:
     - target: {fileID: 3173393232040054610, guid: b8a50309365abcc4cbbcd66834227eee, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919122200442132385, guid: b8a50309365abcc4cbbcd66834227eee, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.058490515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919122200442132385, guid: b8a50309365abcc4cbbcd66834227eee, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919122200442132385, guid: b8a50309365abcc4cbbcd66834227eee, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.49533406
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

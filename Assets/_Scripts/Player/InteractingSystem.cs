@@ -3,11 +3,11 @@ using UnityEngine;
 public class InteractingSystem : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask layerMask;
+    private LayerMask _layerMask;
     private void Update()
     {
         //Casting a circle to detect objects
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, 0.6f, ~layerMask);
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, 0.6f, ~_layerMask);
         if (hit != null)
         {
             hit.TryGetComponent(out WorldObject worldObject);

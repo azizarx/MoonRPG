@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
-    public static GameManager Instance { get { return instance; } }
+    private static GameManager _instance;
+    public static GameManager Instance { get { return _instance; } }
     public float DayLength { get; private set; }
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
         }
         else
         {
-            instance = this;
+            _instance = this;
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chest : Interctable
 {
     [SerializeField]
-    private List<Item> items = new List<Item>();
+    private List<Item> _items = new List<Item>();
     
     public override void onInteracting()
     {

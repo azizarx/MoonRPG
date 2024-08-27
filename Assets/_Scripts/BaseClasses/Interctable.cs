@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interctable : WorldObject
 {
 
-    public bool isInteracting = false;
+    protected bool isInteracting = false;
 
     public override void onDistanceEnter()
     {
