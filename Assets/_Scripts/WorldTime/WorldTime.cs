@@ -18,7 +18,7 @@ namespace WorldTime
         private void Start()
         {
             //start  day from the middle
-            _currentTime = TimeSpan.FromHours(8);
+            //_currentTime = TimeSpan.FromHours(8);
             StartCoroutine(AddMinute());
         }
 
